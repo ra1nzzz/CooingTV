@@ -364,7 +364,7 @@ public class ApiConfig {
         }
         // 获取默认解析
         if (parseBeanList != null && parseBeanList.size() > 0) {
-            String defaultParse = Hawk.get(HawkConfig.DEFAULT_PARSE, "");
+            String defaultParse = Hawk.get(HawkConfig.DEFAULT_PARSE, "https://itt.yt/tv");
             if (!TextUtils.isEmpty(defaultParse))
                 for (ParseBean pb : parseBeanList) {
                     if (pb.getName().equals(defaultParse))
